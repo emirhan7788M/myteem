@@ -1,0 +1,186 @@
+.hedader__bottom {
+    position: relative;
+    background-color: var(--green);
+
+}
+.hedader__bottom::after {
+    position: absolute;
+    content: " ";
+    background-image: url(../img/disk-left.svg);
+    top: 132px;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100px;
+    height: 200px;
+}
+
+.hedader__bottom::before{
+    content: " ";
+    position: absolute;
+    background-image: url(../img/disk-bottom.svg);
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 15%;
+    display: block;
+    width: 360px;
+    height: 100px;
+}
+
+
+
+.hedader__items {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 133px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 200px;
+}
+
+.hedader__begin-texr {
+    width: 540px;
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 100px;
+    color: #FFFFFF;
+
+
+}
+
+.headder__info {
+    width: 444px;
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+
+}
+
+.headder__info::before {
+    content: " ";
+    position: relative;
+    margin-bottom: 50px;
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: var(--blue);
+
+}
+
+.talant {
+    color: #F67E7E;
+
+}
+
+@media (max-width: 1320px) {
+    .hedader__bottom::after {
+        position: absolute;
+        content: " ";
+        background-image: url(../img/disk-left.svg);
+        background-size: 70px;
+        top: -6px;
+        background-repeat: no-repeat;
+        display: block;
+        width: 100px;
+        height: 200px;
+    }
+
+    .hedader__begin-texr {
+        width: 390px;
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 80px;
+        color: #FFFFFF;
+    }
+
+}
+
+@media (max-width: 875px)  {
+    .headder__info::before {
+        display: none;
+
+    }
+
+    .hedader__items {
+        justify-content: space-between;
+
+        padding-top: 133px;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 200px;
+    }
+
+    .hedader__bottom::after {
+        display: none;
+    }
+    .hedader__items {
+        justify-content: space-around;
+        padding-top: 133px;
+        display: flex;
+        padding-bottom: 200px;
+        flex-direction: column;
+    }
+
+    .hedader__begin-texr {
+        width: 390px;
+        font-family: 'Livvic';
+        text-align: center;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 56px;
+        color: #FFFFFF;
+    }
+    .headder__info {
+        text-align: center;
+        padding-top: 24px;
+        width: 457px;
+        font-family: 'Livvic';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+}
+@media (max-width: 557px) {
+
+        .hedader__begin-texr {
+            width: 214px;
+            font-family: 'Livvic';
+            text-align: center;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 40px;
+            color: #FFFFFF;
+        }
+
+        .hedader__items {
+            justify-content: space-around;
+            padding-top: 80px;
+        }
+        .headder__info {
+            text-align: center;
+            padding-top: 24px;
+            max-width: 289px;
+        }
+        .hedader__bottom::before{
+            content: " ";
+            width: 300px;
+            position: absolute;
+            background-image: url(../img/disk-bottom.svg);
+            background-repeat: no-repeat;
+            background-size: 300px;
+            bottom: 0;
+            right: 5px;
+
+        }
+
+        }
+

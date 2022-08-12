@@ -1,0 +1,134 @@
+.header__section {
+    background-color: var(--green);
+}
+
+.header__top {
+    padding-top: 77px;
+    justify-content: space-between;
+    display: flex;
+}
+
+
+
+.header__menu {
+    justify-content: space-between;
+    display: flex;
+}
+.header__items {
+    gap: 30px;
+    margin-left: 50px;
+    align-items: center;
+    display: flex;
+}
+
+.header__links {
+    font-family: 'Livvic';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    transition: 300ms;
+}
+
+.header__links:hover{
+    color: var(--optitext);
+}
+
+.header__burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    display: none;
+
+
+}
+
+.header__line {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+
+}
+
+
+.header__btn {
+    border: 2px solid #FFFFFF;
+    width: 153px;
+    border-radius: 24px;
+    color: #fff;
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    transition:700ms;
+    box-shadow: inset 0 0 0 0 #F67E7E;
+}
+
+.header__btn:hover {
+    border: 2px solid  #fff;
+    color:  var(--green);
+    background-color: #fff;
+    box-shadow: inset 200px 0 0 0 #F67E7E;
+    cursor: pointer;
+}
+
+
+@media (max-width: 557px) {
+
+
+    .header__items {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: 100%;
+        background-color: var(--ligthgreen);
+        flex-direction: column;
+        justify-content: center;
+        transition: 500ms;
+        transform: translate(110%);
+        padding: 20px;
+
+
+    }
+
+    .header__items::after{
+        content: " ";
+        background-image: url("../img/ovalburger.svg");
+        background-repeat: no-repeat;
+        width: 90px;
+        height: 200px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .header__btn {
+        display: none;
+    }
+    .header__burger {
+        display: flex ;
+    }
+    .header__top {
+        padding-top: 29px;
+
+    }
+
+    .header__logo {
+        width: 40%;
+    }
+
+    .header__menu {
+        justify-content: stretch;
+        display: flex;
+    }
+
+
+    .header__items {
+        gap: 19px;
+        align-items: center;
+
+    }
+
+}

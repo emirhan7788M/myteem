@@ -1,0 +1,96 @@
+.start {
+    background-color: var(--optitext);
+    position: relative;
+}
+
+.start::after {
+    content: " ";
+    background-image: url(../img/startoval.svg);
+    width: 200px;
+    height: 123px;
+    top: 45%;
+    position: absolute;
+
+}
+
+.start__wrapper {
+    padding: 86px 0;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.start__redy {
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 38px;
+    color: #012F34;
+}
+
+.start__btn {
+    padding: 8px 0;
+    width: 147px;
+    color: #012F34;
+    border: 2px solid #012F34;
+    border-radius: 24px;
+    transition: 300ms;
+}
+
+.start__btn:hover {
+    color: var(--optitext);
+    background-color: var(--ligthgreen);
+    border: 2px solid #fff;
+
+}
+
+@media (max-width: 678px) {
+    .start__redy {
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 24px;
+    }
+
+    .start::after {
+        content: " ";
+        background-image: url(../img/startoval.svg);
+        width: 200px;
+        height: 123px;
+        top: 45%;
+        position: absolute;
+
+    }
+}
+
+@media (max-width: 557px) {
+    .start__redy {
+        text-align: center;
+        width: 100%;
+        font-size: 32px;
+        line-height: 32px;
+        margin-bottom: 24px;
+    }
+
+    .start::after {
+        content: " ";
+        background-image: url(../img/startoval.svg);
+        width: 200px;
+        height: 123px;
+        top: 56%;
+        position: absolute;
+
+    }
+}
+
+@media (max-width: 360px) {
+    .start::after {
+        content: " ";
+        background-image: url(../img/startoval.svg);
+        width: 200px;
+        height: 123px;
+        top: 60%;
+        position: absolute;
+
+    }
+}

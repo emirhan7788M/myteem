@@ -1,0 +1,65 @@
+.some{
+    background-color: var(--abaut_cart);
+}
+
+.some::before{
+    content: url(../img/some.svg);
+}
+.some__itm {
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 70px;
+}
+.some__brand {
+    padding-bottom: 151px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.some__img {
+    width: 15%;
+}
+@media (max-width: 768px) {
+    .some__img {
+        width: 18%;
+    }
+    .some__brand {
+        text-align: center;
+        display: flex;
+    }
+    .some__brand {
+        font-size: 32px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 570px) {
+
+    .some__img {
+        width: 45%;
+    }
+    .some__brand {
+        padding-bottom: 80px;
+        gap: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .some__itm {
+        font-size: 32px;
+        line-height: 32px;
+        padding-top: 30px;
+        text-align: center;
+        padding-bottom: 64px;
+
+    }
+
+    .pipople__text {
+        font-size: 32px;
+        line-height: 32px;
+    }
+}
+
+

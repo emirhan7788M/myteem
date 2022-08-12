@@ -1,0 +1,199 @@
+.main__main{
+    position: relative;
+    background-color: var(--green);
+}
+.main__main::after{
+    content: " ";
+    position: absolute;
+    background-image: url(../img/oval-abaut.png);
+    background-repeat: no-repeat;
+    background-size: 66px;
+    right: 0;
+    top: 281px;
+    width: 66px;
+    height: 132px;
+}
+
+.abaut__wrapper {
+    padding-bottom: 120px;
+    padding-top: 130px;
+    width: 100%;
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.abaut__item {
+    width: 30%;
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100px;
+
+}
+
+.abaut__right {
+    position: relative;
+    width: 66%;
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.abaut__right::before {
+
+    content: " ";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    top: -40px;
+    background-color: var(--optitext);
+}
+
+
+@media (max-width: 934px) {
+
+    .main__main::after {
+        background-size: 55px;
+        right: 0px;
+        top: 306px;
+        width: 55px;
+        height: 107px;
+    }
+}
+
+@media (max-width: 768px) {
+    .abaut__right {
+        text-align: center;
+        font-size: 15px;
+
+    }
+
+    .abaut__item {
+        width: 30%;
+        font-family: 'Livvic';
+        font-size: 64px;
+        line-height: 56px;
+
+    }
+
+    .abaut__wrapper {
+        padding-bottom: 120px;
+        padding-top: 130px;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+
+    }
+    .abaut__right::before {
+        display: none;
+    }
+
+    .abaut__item {
+        margin-bottom: 24px;
+
+    }
+    .main__main::after {
+        background-size: 55px;
+        right: 0px;
+        top: 306px;
+        width: 55px;
+        height: 107px;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
+    .main::after {
+        background-size: 100px;
+        right: 0px;
+        top: 280px;
+        width: 101px;
+        height: 190px;
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .main::after {
+        background-size: 100px;
+        right: 0px;
+        top: 360px;
+        width: 101px;
+        height: 190px;
+    }
+}
+
+@media (max-width: 570px){
+
+    .main__main::after {
+        background-size: 55px;
+        right: 0px;
+        top: 334px;
+        width: 55px;
+        height: 107px;
+    }
+    .abaut__item {
+        width: 100%;
+        font-size: 64px;
+        line-height: 56px;
+        text-align: center;
+    }
+
+
+
+    .abaut__right {
+        width: 100%;
+    text-align: center;
+    font-size: 15px;
+}
+}
+
+
+@media (max-width: 390px) {
+
+    .main__main::after {
+        background-size: 100px;
+        right: 0px;
+        top: 434px;
+        width: 98px;
+        height: 89px;
+    }
+}
+
+@media (max-width: 457px)
+{
+
+    .main__main::after {
+        background-size: 100px;
+        right: 0px;
+        top: 379px;
+        width: 98px;
+        height: 89px;
+    }
+}
+
+
+@media (max-width: 360px)
+{
+
+    .main__main::after {
+        background-size: 100px;
+        right: 0px;
+        top: 432px;
+        width: 98px;
+        height: 89px;
+    }
+}

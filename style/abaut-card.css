@@ -1,0 +1,146 @@
+.piople {
+    position: relative;
+    background-color:  var(--real);
+}
+
+.piople::before{
+    content: url(../img/start-oval.svg);
+}
+.piople::after{
+    position: absolute;
+    content: url(../img/start-kvadrat.svg);
+    right: 0;
+    bottom: 0;
+}
+
+.piople__wrapper {
+    padding-bottom: 168px;
+    width: 100%;
+    display: flex;
+    gap: 45px;
+    flex-wrap: wrap;
+}
+
+.pipople__text{
+    padding: 40px 0 99px 0;
+    text-align: center;
+}
+
+
+.pipole__list {
+    background-color: var(--abaut_cart);
+
+}
+
+
+
+.pipole__list {
+    position: relative;
+    width: 29%;
+}
+
+.piople__img {
+    padding-top: 35px;
+    width: 25%;
+    display: block;
+    margin: 0 auto;
+}
+
+.pipolpe__name {
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--blue);
+}
+
+.pipole__profesion {
+    margin-bottom: 56px;
+    font-family: 'Livvic';
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+}
+
+.pipole__add {
+    left: calc(50% - 56px/2);
+    top: calc(50% - 56px/2 + 112.5px);
+    border-radius: 50px;
+    position: absolute;
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 700;
+    font-size: x-large;
+    background-color: var(--optitext);
+    width: 60px;
+    height: 56px;
+
+}
+
+
+
+.piople__all--card2 {
+    padding-bottom: 168px;
+}
+
+.piople__icons {
+    margin-top: 24px;
+    text-align: center;
+}
+
+.last_text  {
+    font-family: 'Livvic';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.last__item  {
+    margin-top: 35px;
+}
+
+
+@media (max-width: 768px) {
+    .piople__wrapper {
+        gap: 55px;
+        width: 100%;
+    }
+
+    .pipole__list {
+        margin: 0 auto;
+        position: relative;
+        width: 45%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .pipole__list {
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .piople__wrapper {
+        gap: 55px;
+        width: 100%;
+        display: flex;
+
+    }
+}
+
+
+@media (max-width: 570px) {
+
+    .pipole__list {
+        margin: 0 auto;
+        position: relative;
+        width: 100%;
+    }
+}
+
